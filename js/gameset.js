@@ -73,8 +73,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 ],
                 "generationConfig": {
                     "stopSequences": [""],
-                    "temperature": 0.7, // 设置为一个合理的值，0.7通常是一个好的起点
-                    "maxOutputTokens": 50, // 设置为较小值以进行快速验证
+                    "temperature": 0.7, 
+                    "maxOutputTokens": 50, 
                     "topP": 0.9,
                     "topK": 40
                 }
@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 hideLoader();
                                 currentStoryPoint = {
                                     text: responseText,
-                                    image: script[choice.next].image,  // 从脚本中获取新的图像URL
+                                    image: script[choice.next].image,  
                                     choices: script[choice.next].choices
                                 };
                                 renderStoryPoint(currentStoryPoint);
@@ -231,33 +231,30 @@ document.addEventListener('DOMContentLoaded', function() {
     let prologueIndex = 0;
     let prologueData = [];
 
-    // 从 prologue.json 文件中读取序章数据
+    
     fetch('../storyline/prologue.json')
         .then(response => response.json())
         .then(data => {
             prologueData = data;
 
-            // 显示序章的下一段
+            
             function showNextPrologue() {
                 if (prologueIndex < prologueData.length) {
                     prologueImage.src = prologueData[prologueIndex].image;
                     prologueText.innerText = prologueData[prologueIndex].text;
                     prologueIndex++;
                 } else {
-                    // 如果序章结束，显示封面页
                     prologuePage.style.display = 'none';
                     coverPage.style.display = 'block';
                 }
             }
 
-            // 点击游戏视觉页面开始游戏
             gameVisual.addEventListener('click', function() {
                 gameVisual.style.display = 'none';
                 prologuePage.style.display = 'block';
                 showNextPrologue();
             });
 
-            // 点击任意地方推进序章故事
             prologuePage.addEventListener('click', showNextPrologue);
         })
         .catch(error => {

@@ -117,13 +117,13 @@ form input {
 .menu {
     display: none;
     position: fixed;
-    bottom: 60px; /* 距离底部的距离 */
-    right: 20px; /* 距离右侧的距离 */
+    bottom: 60px; 
+    right: 20px; 
     background-color: #ffffff;
     border: 1px solid #cccccc;
     border-radius: 5px;
     padding: 10px;
-    z-index: 999; /* 确保菜单在其他内容上方 */
+    z-index: 999; 
 }
 
 .menu-btn {
