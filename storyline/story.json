@@ -1,0 +1,301 @@
+{
+    "start": {
+        "text": "你和卡爾乘坐火車來到卡司農村，這裡被厚重的霧氣籠罩，村莊的氛圍顯得異常陰森。村口站著一位村民，他看上去十分焦慮，見到你們便迎了上來。",
+        "image": "../img/start.png",
+        "choices": [
+            { "text": "和村民交談", "next": "talk_to_villager" },
+            { "text": "直接進入村莊", "next": "enter_village" }
+        ]
+    },
+    "talk_to_villager": {
+        "text": "村民告訴你們最近村子裡發生了一連串的謀殺案，所有受害者的死亡時間都在午夜，且每個現場都留有一朵枯萎的玫瑰。村民希望你們能解開這個詭異事件的真相。",
+        "image": "../img/flower.png",
+        "choices": [
+            { "text": "問村民更多細節", "next": "more_details" },
+            { "text": "向卡爾請教下一步計劃", "next": "ask_karl" }
+        ]
+    },
+    "enter_village": {
+        "text": "你們決定不與村民交談，直接進入村莊，開始調查現場。街道上空無一人，只有風聲和你們的腳步聲迴響在寂靜的夜裡。卡爾建議先去查看最近的一個案發現場。",
+        "image": "../img/road.png",
+        "choices": [
+            { "text": "前往案發現場", "next": "crime_scene" },
+            { "text": "探索村莊的其他地方", "next": "explore_village" }
+        ]
+    },
+    "more_details": {
+        "text": "村民告訴你們，最近一次謀殺發生在村邊的一座破舊小屋裡。受害者是一名年輕女子，她的身旁留有一朵枯萎的玫瑰。",
+        "image": "../img/hut.png",
+        "choices": [
+            { "text": "前往案發現場", "next": "crime_scene" },
+            { "text": "向卡爾請教下一步計劃", "next": "ask_karl" }
+        ]
+    },
+    "ask_karl": {
+        "text": "卡爾沉思了一會兒，然後建議你們先去查看案發現場，然後再決定下一步行動。",
+        "image": "../img/castle.png",
+        "choices": [
+            { "text": "前往案發現場", "next": "crime_scene" },
+            { "text": "探索村莊的其他地方", "next": "explore_village" }
+        ]
+    },
+    "crime_scene": {
+        "text": "你們來到最近的一個案發現場，是村子邊緣的一座破舊小屋。屋內一片狼藉，似乎經歷了一場激烈的掙扎。你們開始仔細檢查每個角落，希望能找到一些線索。",
+        "image": "../img/crime_scene.png",
+        "choices": [
+            { "text": "檢查地板上的血跡", "next": "inspect_blood" },
+            { "text": "檢查桌上的物品", "next": "inspect_table" },
+            { "text": "向卡爾請教如何進行下一步調查", "next": "ask_karl_next" }
+        ]
+    },
+    "explore_village": {
+        "text": "你們決定先探索村莊的其他地方。村莊的街道狹窄而曲折，隨處可見破舊的房屋和空蕩蕩的店鋪。",
+        "image": "../img/explore_village.png",
+        "choices": [
+            { "text": "進入一家看似仍在營業的店鋪", "next": "enter_shop" },
+            { "text": "在村莊中繼續探索", "next": "continue_exploring" },
+            { "text": "返回村口與村民交談", "next": "talk_to_villager" }
+        ]
+    },
+    "inspect_blood": {
+        "text": "你發現地板上的血跡形成了一個奇怪的圖案，似乎是一種古老的符號。你記下了這個符號，並決定進一步調查其意義。",
+        "image": "../img/blood.png",
+        "choices": [
+            { "text": "繼續檢查屋內其他地方", "next": "continue_inspecting" },
+            { "text": "帶著這個符號去村裡的圖書館查資料", "next": "go_to_library" }
+        ]
+    },
+    "inspect_table": {
+        "text": "桌上散落著一些紙張和筆記，你發現其中一頁寫著“午夜玫瑰”，但後面便沒有了下文。你決定將這頁紙帶回去仔細研究。",
+        "image": "../img/table.png",
+        "choices": [
+            { "text": "繼續檢查屋內其他地方", "next": "continue_inspecting" },
+            { "text": "向卡爾展示這頁紙，討論下一步計劃", "next": "show_karl" }
+        ]
+    },
+    "ask_karl_next": {
+        "text": "卡爾建議你們分頭行動，他去查看屋外的環境，你則留在屋內繼續搜查。這樣可以更快找到更多線索。",
+        "image": "../img/outside.png",
+        "choices": [
+            { "text": "檢查壁爐和附近的書架", "next": "inspect_fireplace" },
+            { "text": "檢查窗戶和窗台", "next": "inspect_window" }
+        ]
+    },
+    "continue_inspecting": {
+        "text": "你決定繼續檢查屋內的其他地方，希望能找到更多線索。",
+        "image": "../img/searching1.png",
+        "choices": [
+            { "text": "檢查壁爐和附近的書架", "next": "inspect_fireplace" },
+            { "text": "檢查窗戶和窗台", "next": "inspect_window" }
+        ]
+    },
+    "go_to_library": {
+        "text": "你帶著符號來到村裡的圖書館，這裡儘管破舊，但還是保存著許多古老的書籍。你開始尋找與符號相關的資料。",
+        "image": "../img/library.png",
+        "choices": [
+            { "text": "向圖書館員求助", "next": "ask_librarian" },
+            { "text": "自己搜尋符號的意義", "next": "search_symbol" }
+        ]
+    },
+    "enter_shop": {
+        "text": "你走進了一家看似仍在營業的店鋪，裡面擺滿了各種古董和奇特的物品。店主是一位年老的婦人，她熱情地招呼你。",
+        "image": "../img/shop.png",
+        "choices": [
+            { "text": "和店主交談", "next": "talk_to_shopkeeper" },
+            { "text": "查看店裡的物品", "next": "inspect_items" }
+        ]
+    },
+    "continue_exploring": {
+        "text": "你在村莊中繼續探索，發現了一座看似廢棄的教堂，教堂的大門半掩著，似乎有人曾經進入過。",
+        "image": "../img/church.png",
+        "choices": [
+            { "text": "進入教堂", "next": "enter_church" },
+            { "text": "繼續探索村莊", "next": "explore_more" }
+        ]
+    },
+    "ask_librarian": {
+        "text": "圖書館員告訴你這個符號是古老詛咒的一部分，與村裡的一個古老傳說有關。傳說中，這個符號代表了一個被詛咒的靈魂，只有找到並解開詛咒的源頭才能平息靈魂的怨恨。",
+        "image": "../img/librarian.png",
+        "choices": [
+            { "text": "返回卡爾處討論對策", "next": "return_to_karl" }
+        ]
+    },
+    "search_symbol": {
+        "text": "你在圖書館中找到了一本關於詛咒和符號的書，翻閱後發現這個符號代表著一種古老的復仇儀式，涉及靈魂和祭品。你決定回去與卡爾分享這個發現。",
+        "image": "../img/book.png",
+        "choices": [
+            { "text": "繼續搜尋更多相關資料", "next": "search_more" }
+        ]
+    },
+    "inspect_fireplace": {
+        "text": "你在壁爐附近發現了一本半燒的日記，日記裡提到受害者曾受到某人的威脅，並提到了午夜玫瑰的傳說。",
+        "image": "../img/fireplace.png",
+        "choices": [
+            { "text": "繼續檢查書架", "next": "inspect_bookshelf" },
+            { "text": "向卡爾展示日記，討論下一步計劃", "next": "show_karl_diary" }
+        ]
+    },
+    "inspect_window": {
+        "text": "你檢查窗戶時發現窗台上有一些泥土，看起來像是有人從窗外進入屋內。你決定檢查這些泥土，看看是否有其他線索。",
+        "image": "../img/window.png",
+        "choices": [
+            { "text": "繼續檢查窗戶附近", "next": "inspect_near_window" },
+            { "text": "向卡爾展示泥土，討論下一步計劃", "next": "show_karl_dirt" }
+        ]
+    },
+    "inspect_bookshelf": {
+        "text": "你在書架上發現了一本有關當地傳說的書，書中記載著午夜玫瑰的故事：一個年輕女子因愛生恨，被詛咒在午夜用玫瑰標記她的復仇目標。",
+        "image": "../img/bookshelf.png",
+        "choices": [
+            { "text": "繼續檢查屋內其他地方", "next": "continue_inspecting" },
+            { "text": "向卡爾展示這本書，討論下一步計劃", "next": "show_karl_book" }
+        ]
+    },
+    "show_karl_diary": {
+        "text": "卡爾看了日記後，認為這是一個重要線索，提議你們去詢問村裡的長者是否知道更多關於午夜玫瑰的傳說。",
+        "image": "../img/diary.png",
+        "choices": [
+            { "text": "前往詢問村裡的長者", "next": "ask_elder" },
+            { "text": "繼續檢查屋內其他地方", "next": "continue_inspecting" }
+        ]
+    },
+    "show_karl_dirt": {
+        "text": "卡爾檢查了泥土後，認為這可能來自村外的墓地，他建議你們去那裡查看是否有其他線索。",
+        "image": "../img/graveyard.png",
+        "choices": [
+            { "text": "前往墓地調查", "next": "go_to_graveyard" },
+            { "text": "繼續檢查屋內其他地方", "next": "continue_inspecting" }
+        ]
+    },
+    "show_karl_book": {
+        "text": "卡爾看了書後，認為這是一個關鍵線索，提議你們去詢問村裡的長者是否知道更多關於午夜玫瑰的傳說。",
+        "image": "../img/book.png",
+        "choices": [
+            { "text": "前往詢問村裡的長者", "next": "ask_elder" },
+            { "text": "繼續檢查屋內其他地方", "next": "continue_inspecting" }
+        ]
+    },
+    "inspect_near_window": {
+        "text": "你在窗戶附近發現了一片破碎的布片，看起來像是從某人的衣服上撕下來的。布片上有一些奇怪的符號。",
+        "image": "../img/cloth.png",
+        "choices": [
+            { "text": "繼續檢查屋內其他地方", "next": "continue_inspecting" },
+            { "text": "向卡爾展示布片，討論下一步計劃", "next": "show_karl_cloth" }
+        ]
+    },
+    "ask_elder": {
+        "text": "你們找到村裡的長者，他告訴你們午夜玫瑰的傳說源於一個古老的詛咒，只有找到並摧毀詛咒的源頭才能平息靈魂的怨恨。",
+        "image": "../img/elder.png",
+        "choices": [
+            { "text": "繼續詢問更多細節", "next": "ask_more_details_elder" },
+            { "text": "返回卡爾處討論對策", "next": "return_to_karl" }
+        ]
+    },
+    "go_to_graveyard": {
+        "text": "你們來到村外的墓地，發現一些新鮮的泥土和挖掘的痕跡。你們決定檢查這些痕跡，希望能找到更多線索。",
+        "image": "../img/graveyard.jpg",
+        "choices": [
+            { "text": "檢查挖掘的痕跡", "next": "inspect_digging" },
+            { "text": "檢查墓碑上的名字", "next": "inspect_tombstone" }
+        ]
+    },
+    "inspect_digging": {
+        "text": "你們發現挖掘的痕跡通向一座無名的墓，墓中似乎有一個被打開的棺材，裡面空無一物。你們決定進一步檢查這個墓穴。",
+        "image": "../img/coffin.png",
+        "choices": [
+            { "text": "進一步檢查墓穴", "next": "inspect_grave" }
+        ]
+    },
+    "inspect_tombstone": {
+        "text": "你們發現墓碑上的名字是被詛咒的年輕女子，她在被殺害後就埋葬在這裡。墓碑上還刻有與你們在案發現場看到的符號相同的標記。",
+        "image": "../img/tombstone.png",
+        "choices": [
+            { "text": "進一步檢查墓穴", "next": "inspect_grave" }
+        ]
+    },
+    "inspect_grave": {
+        "text": "你們在墓穴中發現了一本古老的書，書中記載著解除詛咒的儀式。你們決定嘗試進行這個儀式。",
+        "image": "../img/oldbook.png",
+        "choices": [
+            { "text": "進行解除詛咒的儀式", "next": "perform_ritual" },
+            { "text": "返回卡爾處討論對策", "next": "return_to_karl" }
+        ]
+    },
+    "perform_ritual": {
+        "text": "你們按照書中的指示進行了解除詛咒的儀式，周圍的氣氛變得更加詭異，似乎有一種無形的力量在逼近。",
+        "image": "../img/ritual.png",
+        "choices": [
+            { "text": "繼續進行儀式", "next": "continue_ritual" },
+            { "text": "中斷儀式，返回卡爾處討論對策", "next": "abort_ritual" }
+        ]
+    },
+    "continue_ritual": {
+        "text": "隨著儀式的進行，突然間你們感到一股強大的力量撲面而來，眼前的景象變得模糊。當你們恢復意識時，發現詛咒已經被解除，午夜玫瑰的傳說也隨之結束。",
+        "image": "../img/success.png",
+        "choices": [
+            { "text": "成功破案，返回村莊告知村民真相", "next": "end_success" }
+        ]
+    },
+    "abort_ritual": {
+        "text": "你們決定中斷儀式，返回卡爾處討論對策。卡爾認為應該尋找其他方法來解除詛咒。",
+        "image": "../img/interrupt.png",
+        "choices": [
+            { "text": "繼續探索村莊，尋找其他線索", "next": "explore_village" },
+            { "text": "返回村口與村民交談", "next": "talk_to_villager" }
+        ]
+    },
+    "ask_more_details_elder": {
+        "text": "長者告訴你們，詛咒的源頭來自一個被遺棄的地下祭壇，那裡曾經是進行黑魔法儀式的地方。",
+        "image": "../img/altar.png",
+        "choices": [
+            { "text": "前往地下祭壇", "next": "go_to_altar" },
+            { "text": "返回卡爾處討論對策", "next": "return_to_karl" }
+        ]
+    },
+    "show_karl_cloth": {
+        "text": "卡爾檢查了布片後，認為這是進一步的線索，建議你們去詢問村裡的長者是否知道這些符號的意義。",
+        "image": "../img/elder.png",
+        "choices": [
+            { "text": "前往詢問村裡的長者", "next": "ask_elder" },
+            { "text": "繼續檢查屋內其他地方", "next": "continue_inspecting" }
+        ]
+    },
+    "go_to_altar": {
+        "text": "你們來到地下祭壇，這裡充滿了黑魔法的氣息。祭壇中央放著一個骷髏頭骨，看起來就是詛咒的源頭。",
+        "image": "../img/altar.jpg",
+        "choices": [
+            { "text": "摧毀骷髏頭骨", "next": "destroy_skull" },
+            { "text": "進行解除詛咒的儀式", "next": "perform_ritual" }
+        ]
+    },
+    "destroy_skull": {
+        "text": "你們決定摧毀骷髏頭骨，當你們砸碎它的時候，一股強大的黑暗力量釋放出來，將你們吞噬。",
+        "image": "../img/destroy.png",
+        "choices": [
+            { "text": "死亡", "next": "end_death" }
+        ]
+    },
+    "return_to_karl": {
+        "text": "你們返回卡爾處，將所獲得的所有線索整理了一遍。卡爾建議你們嘗試進行解除詛咒的儀式。",
+        "image": "../img/ritual.png",
+        "choices": [
+            { "text": "進行解除詛咒的儀式", "next": "perform_ritual" },
+            { "text": "繼續探索村莊，尋找其他線索", "next": "explore_village" }
+        ]
+    },
+    "end_success": {
+        "text": "你們成功地解除了詛咒，村莊重新恢復了平靜。村民們對你們表示感激，村子裡再也沒有發生過午夜玫瑰的謀殺案。",
+        "image": "../img/success_1.png",
+        "choices": []
+    },
+    "end_failure": {
+        "text": "你們沒能找到解除詛咒的方法，村莊的謀殺案繼續發生，午夜玫瑰的詛咒依舊籠罩著這個地方。",
+        "image": "../img/failure.png",
+        "choices": []
+    },
+    "end_death": {
+        "text": "你們在摧毀骷髏頭骨時被強大的黑暗力量吞噬，未能解開詛咒，成為了詛咒的最新受害者。",
+        "image": "../img/destroy.png",
+        "choices": []
+    }
+}

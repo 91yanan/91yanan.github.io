@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zn-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>受詛咒的卡司農村</title>
+    <link rel="stylesheet" href="css/gameset.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="game-visual">
+        <div id="click-layer"></div>
+    </div>
+
+    <div id="prologue-page" class="page" style="display: none;">
+        <img id="prologue-image" alt="Prologue Image">
+        <div id="prologue-text"></div>
+    </div>
+
+    <div id="cover-page" class="page" style="display: none;">
+        <h1>旁觀者紀錄手冊</h1>
+        <form id="api-form">
+            <label for="api-key">API Key:</label>
+            <input type="text" id="api-key" required>
+            <label for="player-name">玩家名字:</label>
+            <input type="text" id="player-name" required>
+            <button type="submit" class="btn">確認開始</button>
+        </form>
+        <p id="error-message" style="color:red;"></p>
+    </div>
+
+    <div id="game-page" class="page" style="display: none;">
+        <div id="story-outline">
+            <h2>規則說明</h2>
+            <p id="outline-text">旁觀者，接下來你將扮演著伊莎貝拉的角色，與卡爾老師共同調查這起離奇的事件。<br>途中有可能會有死亡事件，請務必小心選擇你的道路</p>
+            <button id="start-game" class="btn">進入遊戲</button>
+        </div>
+
+        <div id="game-content" style="display: none;">
+            <img id="story-image" alt="Story Image">
+            <div id="story-text"></div>
+            <div id="choices"></div>
+        </div>
+    </div>
+    <div class="loader" id="loader"></div>
+
+    <!--菜單選項-->
+    <div class="menu-btn" id="menu-btn">&#9776;</div>
+    <div class="menu" id="menu">
+        <a href="#" id="back-to-cover">返回視覺圖</a>
+    </div>
+
+    <script src="js/gameset.js"></script>
+</body>
+</html>
