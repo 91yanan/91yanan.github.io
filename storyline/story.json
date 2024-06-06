@@ -124,7 +124,7 @@
         "text": "你在圖書館中找到了一本關於詛咒和符號的書，翻閱後發現這個符號代表著一種古老的復仇儀式，涉及靈魂和祭品。你決定回去與卡爾分享這個發現。",
         "image": "../img/book.png",
         "choices": [
-            { "text": "繼續搜尋更多相關資料", "next": "search_more" }
+            { "text": "繼續搜尋更多相關資料", "next": "ask_librarian" }
         ]
     },
     "inspect_fireplace": {
