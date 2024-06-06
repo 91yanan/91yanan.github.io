@@ -101,8 +101,7 @@
         "text": "你走進了一家看似仍在營業的店鋪，裡面擺滿了各種古董和奇特的物品。店主是一位年老的婦人，她熱情地招呼你。",
         "image": "../img/shop.png",
         "choices": [
-            { "text": "和店主交談", "next": "talk_to_shopkeeper" },
-            { "text": "查看店裡的物品", "next": "inspect_items" }
+            { "text": "她似乎與這件事無關，趕快離開繼續搜查", "next": "explore_village" }
         ]
     },
     "continue_exploring": {
