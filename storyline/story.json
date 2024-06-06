@@ -108,8 +108,8 @@
         "text": "你在村莊中繼續探索，發現了一座看似廢棄的教堂，教堂的大門半掩著，似乎有人曾經進入過。",
         "image": "../img/church.png",
         "choices": [
-            { "text": "進入教堂", "next": "enter_church" },
-            { "text": "繼續探索村莊", "next": "explore_more" }
+            { "text": "進入教堂", "next": "show_karl_dirt" },
+            { "text": "繼續探索村莊", "next": "explore_village" }
         ]
     },
     "ask_librarian": {
