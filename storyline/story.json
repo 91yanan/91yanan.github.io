@@ -261,7 +261,7 @@
     },
     "go_to_altar": {
         "text": "你們來到地下祭壇，這裡充滿了黑魔法的氣息。祭壇中央放著一個骷髏頭骨，看起來就是詛咒的源頭。",
-        "image": "../img/altar.jpg",
+        "image": "../img/altar.png",
         "choices": [
             { "text": "摧毀骷髏頭骨", "next": "destroy_skull" },
             { "text": "進行解除詛咒的儀式", "next": "perform_ritual" }
